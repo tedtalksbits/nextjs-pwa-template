@@ -32,6 +32,8 @@ KINDE_DOMAIN=your_kinde_domain_here
 
 see the `.example.env.local` file for an example.
 
+---
+
 ### 2. Install dependencies
 
 ```bash
@@ -59,6 +61,17 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+---
+
+### 3. Configuration: PWA
+
+a. To configure the PWA app name and basic meta data, you need to change the `site/config.ts` file
+
+- You can generate favicons using [RealFaviconGenerator](https://realfavicongenerator.net/) or any other generator, this will generate all the files you need to configure the PWA icons, splash screen, etc.
+- Place the contents in `app` folder
+
+b. All other metadata and viewport data can be configured in the `app/layout.txs` file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
